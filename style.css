@@ -1,20 +1,38 @@
-body{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color:black ;
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    margin: 0;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+header {
     display: flex;
     justify-content: space-between;
-    transition: backgound-color 0.5s;
-
+    padding: 15px 25px;
 }
 
-h1{
-    color: white;
-    margin-left: 10px;
-}
-
-p{
+#mode {
     font-size: 1.5rem;
-    margin-right: 25px;
     cursor: pointer;
+}
 
+.content {
+    padding: 20px;
+}
+
+.card {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+}
+
+body.light {
+    background-color: white;
+    color: black;
+}
+
+body.light .card {
+    background-color: #f2f2f2;
 }
